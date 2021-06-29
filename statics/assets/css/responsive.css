@@ -1,0 +1,411 @@
+@media(max-width: 1599px) {
+	.slider-wrapper {padding: 0 100px;}
+	#mainSlider [class^="carousel-control-"] {
+	    width: 80px;
+	    height: 80px;
+	    left: auto;
+        right: 30px;
+	}
+	#mainSlider [class^="carousel-control-"] i {line-height: 80px;}
+
+	#mainSlider .carousel-indicators {left: calc(100% + 50px) !important;}
+}
+
+@media(max-width: 1399px) {
+	#mainSlider .carousel-indicators {left: calc(100% + 25px) !important;}
+    #mainSlider .item-inner {
+        height: 600px;
+    }
+    /* .slider-content > h2 {
+        font-size: 4vh;
+        line-height: 30px;
+    } */
+    .error-content {
+        margin: 200px 0 320px;
+    }
+}
+
+@media(max-width: 1366px) {
+	.slider-wrapper {padding: 0;}
+	#mainSlider [class^="carousel-control-"] {
+	    width: 60px;
+	    height: 60px;
+	    left: 15px;
+	    top: 50%;
+	    transform: rotate(0deg);
+	}
+	#mainSlider .carousel-control-next {left: calc(100% - 75px);}
+	#mainSlider [class^="carousel-control-"] i {line-height: 60px;}
+	#mainSlider .carousel-indicators {
+		width: 35px;
+		bottom: 60px;
+		transform: translateY(0);
+		left: 30px !important;
+	}
+	#mainSlider .carousel-indicators li {
+	    width: 5px;
+	    border-radius: 5px;
+	    height: 30px;
+	    background: transparent;
+	    display: inline-block;
+	    position: relative;
+	}
+	#mainSlider .carousel-indicators li::after {
+		position: absolute;
+		content: '';
+		background: #82b60b;
+		width: 100%;
+		height: 60%;
+		bottom: 0;
+		left: 0;
+		display: block;
+		border-radius: 5px;
+		transition: all .3s linear !important;
+	}
+	#mainSlider .carousel-indicators li.active::after {height: 100%;}
+	#mainSlider .carousel-indicators li.active::before {display: none;}
+	#mainSlider .carousel-indicators li + li {
+		margin-top: 0;
+		margin-left: 5px;
+	}
+    #mainSlider .carousel-control-prev {
+        bottom: 60px;
+        top: auto;
+        left: auto;
+        right: 100px;
+    }
+    #mainSlider .carousel-control-next {
+        left: auto;
+        right: 30px;
+        bottom: 60px;
+        top: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1170px;
+  }
+}
+
+
+@media(max-width: 1199px) {
+    .call-to-action h2 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .team-button {
+        margin-top: 30px;
+    }
+    .welcomeTab-list li a {
+        font-size: 16px;
+    }
+    
+}
+
+
+@media(min-width: 991px) and (max-width: 1199px) {
+    .team-section .team-member > figcaption {
+        margin-left: 0;
+        padding-left: 18px;
+    }
+    .video-content.right {
+        margin-left: auto;
+    }
+    
+}
+
+@media(min-width: 991px) {
+    .about-content {
+        max-width: 460px;
+    }
+    .video-content {
+        max-width: 375px;
+    }
+
+}
+
+
+@media(max-width: 992px) {
+    .site-content {
+        margin-top: 72px;
+    }
+    /* .slider-content > h2 {
+        font-size: 4vh;
+        line-height: 30px;
+    } */
+    .pageBanner-content {
+        padding: 85px 0 110px;
+    }
+    .pageBanner-content > h1 {
+        font-size: 75px;
+        line-height: 1.2;
+    }
+    .testimony-section .section-header,
+    .service-section .section-header,
+    .feature-section .section-header {
+        margin-bottom: 50px;
+    }
+    .about-content {
+        margin-bottom: 55px;
+    }
+    .call-to-action {
+        display: block;
+    }
+    .call-to-action h2 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .welcome-section,
+    .single-service, .service-aside {
+        margin: 100px 0;
+    }
+    .service-aside {
+        margin-top: 0;
+    }
+    .welcome-tab {
+        margin-top: 50px;
+    }
+    .video-section {
+        margin-top: 0;
+        padding-bottom: 100px;
+    }
+    .video-section figure {
+        margin-top: 50px;
+        padding: 50px;
+    }
+    .video-section figure::before,
+    .video-section figure.vdo-onLeft::before {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .video-section figure img {
+        width: 100%;
+    }
+    .video-content {
+        margin-top: 95px;
+    }
+    .about-section,
+    .service-section,
+    .feature-section {
+        padding: 100px 0;
+    }
+    .service-section {
+        padding-bottom: 100px;
+    }
+    .contact-form-area {
+        margin-bottom: 100px;
+    }
+    .team-section {
+        padding: 100px 0 50px;
+    }
+    .testimony-section,
+    .partners-section {
+        padding: 95px 0 100px;
+    }
+    .contact-info,
+    .contact-form h2 {
+        margin-top: 100px;
+    }
+    .contact-map {
+        height: 550px;
+    }
+    .error-content {
+        margin: 150px 0 230px;
+    }
+    .error-content span {
+        font-size: 200px;
+    }
+    .footer-space {
+        margin-bottom: 180px;
+    }
+    .footer-top {
+        margin-top: 80px;
+        transform: translateY(-25%);
+    }
+    .footer-top + .footer-middle {
+        padding-bottom: 45px;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .slider-content {
+        padding-bottom: 50px;
+    }
+    .single-service > h2 {
+        font-size: 38px;
+    }
+    /* .slider-content > h2 {
+        font-size: 4vh;
+        line-height: 30px;
+    } */
+    .pageBanner-content > h1 {
+        font-size: 55px;
+    }
+    .breadcrumbs {
+        margin-top: 15px;
+    }
+    .breadcrumbs > a,
+    .breadcrumbs > span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .contact-form h2,
+    .video-content > h2,
+    .about-content > h2,
+    .section-header > h2,
+    .welcome-section section > h2 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .service-single {
+        display: block;
+    }
+    .service-single figure,
+    .service-single .service-card {
+        max-width: 100%;
+    }
+    .call-to-action {
+        padding: 45px 20px;
+    }
+    .welcome-tab {
+        padding: 0 25px 50px;
+    }
+    .contact-map {
+        height: 450px;
+    }
+    .error-content {
+        margin: 100px 0 170px;
+    }
+    .error-content span {
+        font-size: 150px;
+        line-height: 200px;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .theme-btn {
+        padding: 16px 30px 14px;
+    }
+    .contact-form h2,
+    .video-content > h2,
+    .about-content > h2,
+    .section-header > h2,
+    .welcome-section section > h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about-content > p {
+        column-count: 1;
+    }
+    .team-section .section-header > p {
+        width: 100%;
+    }
+    .video-section figure > a {
+        width: 55px;
+        height: 55px;
+    }
+    .video-section figure > a i {
+        font-size: 16px;
+        line-height: 55px;
+    }
+    .pageBanner-content > h1 {
+        font-size: 45px;
+    }
+    .single-service > h2 {
+        font-size: 35px;
+        margin: 25px 0 10px;
+    }
+    .feature-content {
+        -ms-flex: 0 0 calc(100% - 65px);
+        flex: 0 0 calc(100% - 65px);
+        max-width: calc(100% - 65px);
+    }
+    .welcomeTab-list li {
+        margin: 0 3px 8px;
+    }
+    .welcomeTab-list {
+        margin-bottom: -10px;
+    }
+    .error-content .row > div {
+        padding: 0;
+    }
+    .error-content span {
+        font-size: 100px;
+        line-height: 150px;
+    }
+
+}
+
+
+@media(max-width: 400px) {
+    .slider-content {
+        padding-bottom: 80px;
+    }
+    /* .slider-content > h2 {
+        font-size: 45px;
+        line-height: 60px;
+    } */
+    .slider-content > p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .review-single {
+        padding: 30px 15px;
+    }
+    .reviewed-by {
+        margin-left: 15px;
+    }
+    .reviewed-by > h3 {
+        font-size: 20px;
+    }
+    .review-inner > p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .team-section .team-member > figcaption {
+        margin-left: 0;
+        padding-left: 18px;
+    }
+    .call-to-action h2 {
+        font-size: 30px;
+        line-height: 44px;
+    }
+    .video-section figure {
+        padding: 25px;
+    }
+    #mainSlider [class^="carousel-control-"] {
+        width: 45px;
+        height: 45px;
+    }
+    #mainSlider [class^="carousel-control-"] i {
+        line-height: 45px;
+        font-size: 16px;
+    }
+    #mainSlider .carousel-control-prev {
+        right: 85px;
+    }
+    .feature-carousel .owl-dot {
+        width: 5px;
+    }
+    .widget-single:not(.download-widget) {
+        padding: 37px 25px 40px;
+    }
+    .contact-inner {
+        padding: 50px 25px 20px;
+    }
+    .contact-single > i {
+        font-size: 45px;
+    }
+    .contact-single > h4 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .contact-single > p {
+        font-size: 16px;
+    }
+
+}

@@ -1,0 +1,2465 @@
+/*
+Template Name: Truder - CCTV Security Service Agency HTML5 Template
+Document: Main Style Sheet
+Author: designTone
+Author URL: https://themeforest.net/user/designtone
+
+---------
+CSS INDEX
+---------
+01 => Global CSS
+02 => Preloader CSS
+03 => back2top CSS
+04 => Section Header
+05 => Custom Animation
+06 => Banner CSS
+07 => tdu-hover CSS
+08 => Theme Button
+09 => Slieder CSS
+10 => Line parallex
+11 => Feature CSS
+12 => About Section
+13 => About Page
+14 => Service Secion
+15 => Service Setails
+16 => Widget CSS
+17 => Video Secion
+18 => Team Secion
+19 => Partner Secion
+20 => testimony Secion
+21 => Contact Page
+22 => Error Page
+23 => Footer Secion
+24 => Phone
+25 => Logo
+/*** 
+====================================================================
+    Start Global CSS
+====================================================================
+ ***/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track {
+    background-color: #f3f8ec;
+}
+
+body::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb {
+    background: #82b60b;
+    min-height: 62px
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+a {
+    transition: all .3s ease;
+    color: #91bf29;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ol,
+ul,
+li {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+input,
+textarea {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    resize: none;
+    background-color: transparent;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+textarea::placeholder,
+input::placeholder {
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    outline: 0
+}
+
+button:focus {
+    outline: 0
+}
+
+img {
+    max-width: 100%;
+}
+
+figure img {
+    vertical-align: top;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #91bf29;
+    text-shadow: none;
+}
+
+::selection {
+    background: #91bf29;
+    color: #fff;
+    text-shadow: none;
+}
+
+.site-content {
+    margin-top: 100px;
+}
+/*** 
+====================================================================
+    End Global CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Preloader CSS
+====================================================================
+ ***/
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/preloader.gif);
+    background-size: 80px;
+}
+/*** 
+====================================================================
+    End Preloader CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start back2top CSS
+====================================================================
+ ***/
+.scroll-to-top {
+    width: 40px;
+    height: 40px;
+    -webkit-box-shadow: 0 8px 12px -4px rgba(0, 0, 0, .5);
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, .5);
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #fff;
+    color: #00235a;
+    display: none;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.scroll-to-top:hover {
+    background: #91bf29;
+    color: #fff;
+}
+
+.scroll-to-top i::before {
+    font-size: 15px;
+    line-height: 40px;
+}
+
+/*** 
+====================================================================
+    End back2top CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Section Header CSS
+====================================================================
+ ***/
+.section-header > h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.section-header > p {
+    font-size: 15px;
+    line-height: 27px;
+    margin: 23px auto 0;
+}
+
+.section-header:not(.text-white) > h2 {
+    color: #00235a;
+}
+
+.section-header:not(.text-white) > p {
+    color: #555752;
+}
+/*** 
+====================================================================
+    End Section Header CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Custom Animation CSS
+====================================================================
+ ***/
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+/*** 
+====================================================================
+    End Custom Animation CSS
+====================================================================
+ ***/
+
+/*** 
+====================================================================
+    Start Banner CSS
+====================================================================
+ ***/
+.innerPage-banner {
+    background: url(../img/img6.jpg) no-repeat center center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+.innerPage-banner::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.innerPage-banner-contact{
+    background: url(../img/contact\ us.jpg) no-repeat center center / cover;
+    position: relative;
+    z-index: -1;
+}
+
+.innerPage-banner-contact::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.pageBanner-content > h1 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 110px;
+    color: #fff;
+}
+
+.breadcrumbs {
+    margin-top: 30px;
+    padding: 10px 25px 8px;
+    display: inline-block;
+    background: #82b60b;
+    color: #fff;
+}
+
+.breadcrumbs > a,
+.breadcrumbs > span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.breadcrumbs > a + a,
+.breadcrumbs > a + span {
+    padding-left: 16px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.breadcrumbs > a + a::before,
+.breadcrumbs > a + span::before {
+    position: absolute;
+    content: '-';
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    left: 0;
+    top: 0;
+}
+
+.pageBanner-content {
+    padding: 124px 0 140px;
+    position: relative;
+    z-index: 3;
+}
+
+.breadcrumbs > a:hover {
+    text-decoration: underline;
+}
+/*** 
+====================================================================
+    End Banner CSS
+====================================================================
+ ***/
+
+/*** 
+====================================================================
+    Start tdu-hover CSS
+====================================================================
+ ***/
+.tdu-hover {
+    display: inline-block;
+    position: relative;
+}
+
+.tdu-hover::before {
+    content: '';
+    height: 1px;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    background: currentColor;
+    transform: translateY(6px);
+    transition: 0.15s all cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition-property: opacity, transform;
+    width: 100%;
+}
+
+.tdu-hover:hover::before {
+    opacity: .8;
+    transition-delay: 0.2s;
+    transition-duration: 0.15s;
+    transform: translateY(0) translateZ(0);
+}
+/*** 
+====================================================================
+    End tdu-hover CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Theme Button CSS
+====================================================================
+ ***/
+.theme-btn {
+    display: inline-block;
+    padding: 20px 40px 17px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #305E8A;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.theme-btn:hover {
+    color: white;
+    background: #00235a;
+}
+
+.theme-btn > i {
+    margin-left: 5px;
+    color: #fff;
+    display: inline-block;
+    -webkit-transform: translate(0, 1px);
+    -ms-transform: translate(0, 1px);
+    transform: translate(0, 1px);
+    transition: all .3s ease 0s;
+}
+
+.theme-btn:hover > i {
+    -webkit-transform: translate(5px, 1px);
+    -ms-transform: translate(5px, 1px);
+    transform: translate(5px, 1px);
+    transition: all .3s ease .2s;
+}
+/*** 
+====================================================================
+    End Theme Button CSS
+====================================================================
+ ***/
+
+/*** 
+====================================================================
+    Start  Slieder CSS
+====================================================================
+ ***/
+.slider-wrapper {
+    padding: 0 185px;
+}
+
+#mainSlider {
+    position: relative;
+    width: 100%;
+}
+
+#mainSlider .item-inner {
+    height: 850px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+#mainSlider .item-inner::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.377);
+    z-index: -1;
+}
+
+.slider-content {
+    z-index: 5;
+    position: relative;
+}
+.slider-content > h1{
+    font-size: 8vh;
+    line-height: 85 px;
+    font-weight: 700;
+    color: rgb(15, 247, 34);
+}
+
+.slider-content > h2 {
+    font-size: 3vh;
+    line-height: 85 px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.slider-content > p {
+    font-size: 20px;
+    line-height: 35px;
+    color: #fff;
+    letter-spacing: .2px;
+    margin: 22px 0 44px;
+}
+
+.animD-1 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+.animD-2 {
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+
+.animD-3 {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+#mainSlider [class^="carousel-control-"] {
+    width: 80px;
+    height: 80px;
+    left: -130px;
+    text-align: center;
+    border-radius: 100%;
+    background: #f3f8ec;
+    color: #113417;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: all .3s linear;
+}
+
+#mainSlider .carousel-control-prev {
+    top: calc(50% - 85px);
+}
+
+#mainSlider .carousel-control-next {
+    top: calc(50% + 10px);
+}
+
+#mainSlider [class^="carousel-control-"]:hover,
+#mainSlider [class^="carousel-control-"]:focus {
+    background: #91bf29;
+    color: #fff;
+}
+
+#mainSlider [class^="carousel-control-"] i {
+    font-size: 28px;
+    line-height: 80px;
+}
+
+#mainSlider .carousel-indicators {
+    position: absolute;
+    margin: 0;
+    left: calc(100% + 90px);
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 2px;
+    height: auto;
+    display: block;
+}
+
+#mainSlider .carousel-indicators li {
+    width: 1px;
+    height: 80px;
+    border: none;
+    background: #00235a;
+    position: relative;
+    display: block;
+    margin: 0;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+#mainSlider .carousel-indicators li + li {
+    margin-top: 20px;
+}
+
+#mainSlider .carousel-indicators li.active {
+    background: #82b60b;
+    position: relative;
+}
+
+#mainSlider .carousel-indicators li.active::before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 18px;
+    background: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -1px;
+}
+/*** 
+====================================================================
+    End Slieder CSS
+====================================================================
+ ***/
+
+/*** 
+====================================================================
+    Start Line parallex CSS
+====================================================================
+ ***/
+.scroling-lines {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.scroling-lines > span {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    display: block;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.scroling-lines span span {
+    position: absolute;
+    height: 20px;
+    content: '';
+    width: 100%;
+    left: 0;
+    display: block;
+    background: white;
+}
+
+.scroling-lines > span:nth-child(1) {
+    left: 15%;
+}
+
+.scroling-lines span:nth-child(1) span {
+    top: 10%;
+}
+
+.scroling-lines > span:nth-child(2) {
+    left: 33%;
+}
+
+.scroling-lines span:nth-child(2) span {
+    top: 85%;
+}
+
+.scroling-lines > span:nth-child(3) {
+    left: 51%;
+}
+
+.scroling-lines span:nth-child(3) span {
+    top: 22%;
+}
+
+.scroling-lines > span:nth-child(4) {
+    left: 69%;
+}
+
+.scroling-lines span:nth-child(4) span {
+    top: 35%;
+}
+
+.scroling-lines > span:nth-child(5) {
+    left: 87%;
+}
+
+.scroling-lines span:nth-child(5) span {
+    top: 85%;
+}
+/*** 
+====================================================================
+    End Line parallex CSS
+====================================================================
+ ***/
+
+/*** 
+====================================================================
+    Start Feature CSS
+====================================================================
+ ***/
+.feature-section {
+    padding-top: 80px;
+    padding-bottom: 7px;
+}
+
+.feature-section .section-header {
+    margin-bottom: 95px;
+}
+
+.feature-single {
+    text-align: center;
+}
+
+.feature-single > a {
+    padding: 45px 0;
+    display: block;
+    background: #f3f8ec;
+}
+
+.feature-single > a:hover {
+    background: #82b60b;
+}
+
+.feature-single > a > span {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #00235a;
+    margin-top: 35px;
+    transition: all .3s ease;
+}
+
+.feature-single > a > i {
+    font-size: 50px;
+    color: #82b60b;
+    transition: all .3s ease .1s;
+}
+
+.feature-single > a:hover > i,
+.feature-single > a:hover > span {
+    color: #fff;
+}
+
+.feature-carousel .owl-dot {
+    width: 30px;
+    height: 5px;
+    display: inline-block;
+    background: #f3f8ec;
+    transition: all .3s ease;
+}
+
+.feature-carousel .owl-dot + .owl-dot {
+    margin-left: 10px;
+}
+
+.feature-carousel .owl-dot.active {
+    background: #91bf29;
+}
+
+.feature-carousel .owl-dots {
+    text-align: center;
+    margin-top: 48px;
+}
+/*** 
+====================================================================
+    End Feature CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start About Section CSS
+====================================================================
+ ***/
+.about-section {
+    padding: 150px 0;
+    background: #f3f8ec;
+}
+
+.about-content > h2 {
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 700;
+    color: #00235a;
+}
+
+.about-content > h4 {
+    font-size: 17px;
+    line-height: 28px;
+    color: #82b60b;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+.about-content > p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #555b56;
+    column-count: 2;
+    column-gap: 70px;
+    column-rule: 4px solid #00235a;
+    margin-bottom: 60px;
+}
+
+.intro-gallery img {
+    width: 100%;
+}
+
+.about-gallery-list {
+    margin: 30px -15px 0;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.about-gallery-list li {
+    padding: 0 15px;
+    width: 33.3333%;
+}
+
+.about-gallery-list li > a {
+    position: relative;
+    display: block;
+}
+
+.about-gallery-list li > a::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(130, 182, 11, 0.9);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+    transition: all .3s ease;
+}
+
+.about-gallery-list li > a:not(.active):hover::before {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(130, 182, 11, 0.5);
+}
+
+.about-gallery-list li > a.active::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.about-gallery-list li > a > figure {
+    position: relative;
+}
+
+.about-gallery-list li > a > figure::before,
+.about-gallery-list li > a > figure::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.about-gallery-list li > a.active > figure::before {
+    width: 1px;
+    height: 50%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.about-gallery-list li > a.active > figure::after {
+    width: 50%;
+    height: 1px;
+    visibility: visible;
+    opacity: 1;
+}
+/*** 
+====================================================================
+    End About Section CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start About Page CSS
+====================================================================
+ ***/
+.welcome-section {
+    margin: 150px 0 250px;
+}
+
+.welcome-section section > h2 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 62px;
+    color: #00235a;
+}
+
+.welcome-section section > p {
+    font-size: 15px;
+    line-height: 28px;
+    color: #555b56;
+    margin-top: 28px;
+    padding-right: 20px;
+}
+
+.welcome-section section > p + p {
+    margin-top: 24px;
+}
+
+.welcome-section section .theme-btn {
+    margin-top: 30px;
+}
+
+.welcome-tab {
+    padding: 0 70px 50px 70px;
+    background: #f3f8ec;
+}
+
+.welcomeTab-list li a {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    background: #00235a;
+    display: block;
+    padding: 9px 25px 8px;
+}
+
+.welcomeTab-list li a.active {
+    background: #82b60b;
+}
+
+.welcomeTab-list {
+    padding-bottom: 30px;
+}
+
+#welcomeTab-content .tab-pane p {
+    font-size: 15px;
+    line-height: 28px;
+    color: #555b56;
+    margin-top: 13px;
+}
+
+#welcomeTab-content .tab-pane strong {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #00235a;
+    display: block;
+    margin-top: 13px;
+}
+
+.video-section figure.vdo-onLeft::before {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    top: 70px;
+    left: initial;
+    right: -70px;
+    z-index: -1;
+}
+/*** 
+====================================================================
+    End About Page CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Service Secion CSS
+====================================================================
+ ***/
+.service-section {
+    padding: 143px 0 150px;
+}
+
+.service-section .section-header {
+    margin-bottom: 80px;
+}
+
+.service-single {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 15px 0;
+}
+
+.service-single figure,
+.service-single .service-card {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.service-single figure a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.service-single figure a img {
+    width: 100%;
+    height: 100%;
+}
+
+.service-single .service-card {
+    background: #f3f8ec;
+    transition: all .3s ease;
+}
+
+.service-single:hover .service-card {
+    background: #82b60b;
+}
+
+.service-single .service-card {
+    padding: 50px 40px 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.service-area .row:nth-child(odd) .service-single figure,
+.service-area .row:nth-child(even) .service-single .service-card {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.service-area .row:nth-child(even) .service-single figure,
+.service-area .row:nth-child(odd) .service-single .service-card {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.service-card > h2 {
+    margin-top: auto;
+    margin-bottom: 18px;
+}
+
+.service-card > h2 > a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #00235a;
+    transition: all .3s ease;
+}
+
+.service-card > p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #555752;
+    transition: all .3s ease;
+}
+
+.service-card > a {
+    color: #00235a;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+    position: relative;
+    margin-bottom: auto;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+.service-single:hover .service-card > h2 > a,
+.service-single:hover .service-card > p,
+.service-single:hover .service-card > a {
+    color: #fff
+}
+
+.service-card > a::before {
+    position: absolute;
+    content: '';
+    width: calc(100% - 3px);
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background: currentColor;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition: transform .5s cubic-bezier(0.100, 0.600, 0.350, 1.000) 0s, background .3s;
+}
+
+.service-card > a:hover::before {
+    transform: scale(1, 1);
+    transform-origin: left;
+    transition: transform .5s cubic-bezier(0.100, 0.600, 0.350, 1.000) .1s, background .3s;
+}
+
+.service-area .theme-btn {
+    margin-top: 65px;
+}
+/*** 
+====================================================================
+    End Service Secion CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Service Setails CSS
+====================================================================
+ ***/
+.single-service,
+.service-aside {
+    margin: 150px 0;
+}
+
+.single-service figure {
+    padding-bottom: 10px;
+}
+
+.single-service > h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #00235a;
+    margin: 40px 0 15px;
+}
+
+.single-service > p {
+    font-size: 15px;
+    line-height: 28px;
+    color: #555b56;
+    padding: 10px 0;
+}
+
+.key-feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.key-feature > i {
+    -ms-flex: 0 0 41px;
+    flex: 0 0 41px;
+    max-width: 41px;
+    width: 41px;
+    height: 41px;
+    line-height: 41px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    background: #82b60b;
+    color: #fff;
+}
+
+.feature-content {
+    -ms-flex: 0 0 calc(100% - 80px);
+    flex: 0 0 calc(100% - 80px);
+    max-width: calc(100% - 80px);
+}
+
+.feature-content > h3 {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #00235a;
+}
+
+.feature-content > p {
+    font-size: 15px;
+    line-height: 28px;
+    color: #555b56;
+}
+
+#faq-wraper {
+    margin-top: 40px;
+}
+
+#faq-wraper .card {
+    border: none;
+    background: transparent;
+    transition: all .3s ease;
+}
+
+#faq-wraper .card.active-faq {
+    background: #f3f8ec;
+}
+
+#faq-wraper .card + .card {
+    margin-top: 10px;
+}
+
+#faq-wraper .card-header {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 2px;
+    box-shadow: inset 0 0 0 1px #e9e9e9;
+    transition: all .3s ease;
+}
+
+#faq-wraper .card.active-faq .card-header {
+    box-shadow: none;
+}
+
+#faq-wraper .card-body {
+    padding: 0 30px 30px;
+    font-size: 15px;
+    line-height: 28px;
+    color: #555b56;
+}
+
+.faq_title > a::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.faq_title > a {
+    padding-left: 30px;
+    display: block;
+}
+
+.faq_title > a > span {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 0;
+    line-height: 26px;
+    width: calc(100% - 60px);
+    float: left;
+    display: block;
+    color: #00235a;
+}
+
+.faq-icon {
+    width: 60px;
+    height: 65px;
+    display: block;
+    float: right;
+    position: relative;
+}
+
+.faq-icon::before,
+.faq-icon::after {
+    position: absolute;
+    content: '';
+    background: #00235a;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all .5s ease;
+}
+
+.faq-icon::before {
+    width: 2px;
+    height: 10px;
+    transition: all .5s ease .2s;
+}
+
+.faq-icon::after {
+    width: 10px;
+    height: 2px;
+    transition: all .5s ease 0s;
+}
+
+.faq_title > a[aria-expanded="true"] .faq-icon::before {
+    transition: all .5s ease 0s;
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+/*** 
+====================================================================
+    End Service Setails CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Widget CSS
+====================================================================
+ ***/
+.service-aside {
+    padding-right: 20px;
+}
+
+.widget-single:not(.download-widget) {
+    padding: 37px 40px 40px;
+    background: #f3f8ec;
+}
+
+.widget-single + .widget-single {
+    margin-top: 50px;
+}
+
+.widget-single > h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #00235a;
+}
+
+.widget-single .searchform input:not([type="submit"]) {
+    width: calc(100% - 60px);
+    height: 62px;
+    margin-right: 60px;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+    padding: 15px 30px;
+}
+
+.widget-single .searchform [type="submit"] {
+    width: 60px;
+    height: 62px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.widget-single .searchform {
+    margin-top: 35px;
+    position: relative;
+    width: 100%;
+}
+
+.widget-single .searchform::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 62px;
+    right: 0;
+    top: 0;
+    background: #82b60b;
+}
+
+.widget-single .searchform::after {
+    position: absolute;
+    content: "\ed12";
+    font-family: "IcoFont";
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    color: #fff;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.widget-single .searchform input::-webkit-input-placeholder {
+    color: #555b56;
+}
+
+.widget-single .searchform input::-moz-placeholder {
+    color: #555b56;
+}
+
+.widget-single .searchform input:-ms-input-placeholder {
+    color: #555b56;
+}
+
+.widget-single .searchform input::placeholder {
+    color: #555b56;
+}
+
+.widget-single.category-widget > ul {
+    margin-top: 40px;
+}
+
+.widget-single > ul > li + li {
+    margin-top: 10px;
+}
+
+.widget-single > ul > li > a {
+    display: flex;
+    background: #fff;
+    overflow: auto;
+}
+
+.widget-single > ul > li > a::after {
+    content: '';
+    display: table-cell;
+    clear: both;
+}
+
+.widget-single > ul > li > a > i {
+    width: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    background: #e7ecdf;
+    color: #222;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.widget-single > ul > li > a > span {
+    width: calc(100% - 50px);
+    float: left;
+    display: block;
+    font-size: 15px;
+    padding: 15px 10px 10px 30px;
+    font-weight: 500;
+    color: #222;
+    transition: all .3s ease;
+}
+
+.widget-single > ul > li > a:hover > i {
+    background: #00235a;
+    color: #fff;
+}
+
+.widget-single > ul > li > a:hover > span {
+    color: #fff;
+}
+
+.widget-single > ul > li > a:hover {
+    background: #82b60b;
+}
+
+.widget-single .download-btn {
+    display: flex;
+    background: #f3f8ec;
+    overflow: auto;
+}
+
+.widget-single .download-btn + .download-btn {
+    margin-top: 10px;
+}
+
+.widget-single .download-btn:hover {
+    background: #82b60b;
+}
+
+.widget-single .download-btn::after {
+    content: '';
+    display: table-cell;
+    clear: both;
+}
+
+.widget-single .download-btn > span {
+    font-size: 19px;
+    font-weight: 700;
+    color: #00235a;
+    width: calc(100% - 70px);
+    float: left;
+    padding: 22px 10px 20px 30px;
+    display: block;
+    transition: all .3s ease;
+}
+
+.widget-single .download-btn:hover > span {
+    color: #fff;
+}
+
+.widget-single .download-btn > i {
+    width: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    text-align: center;
+    background: #e7ecdf;
+    color: #00235a;
+    transition: all .3s ease;
+}
+
+.widget-single .download-btn:hover > i {
+    background: #76a608;
+    color: #fff;
+}
+/*** 
+====================================================================
+    End Widget CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Video Secion CSS
+====================================================================
+ ***/
+.video-section {
+    margin-top: 115px;
+    padding-bottom: 150px;
+    background: #f3f8ec;
+}
+
+.video-content {
+    margin-top: 140px;
+}
+
+.video-content > h2 {
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00235a;
+}
+
+.video-content > p {
+    font-size: 15px;
+    line-height: 28px;
+    color: #555b56;
+    margin-bottom: 33px;
+}
+
+.video-section figure {
+    margin-top: -184px;
+    position: relative;
+    z-index: 1;
+}
+
+.video-section figure img {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.video-section figure::before {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    top: 70px;
+    left: -70px;
+    z-index: -1;
+}
+
+.video-section figure > a {
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    text-align: center;
+    display: block;
+    background: #82b60b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.video-section figure > a i {
+    color: #fff;
+    font-size: 30px;
+    line-height: 95px;
+}
+
+.video-section figure > a:hover {
+    background: #00235a;
+}
+
+#popup-video .modal-content iframe {
+    width: 100%;
+    height: 450px;
+}
+/*** 
+====================================================================
+    End Video Secion CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Team Secion CSS
+====================================================================
+ ***/
+.team-section {
+    padding: 0px 0 100px;
+}
+
+.team-member {
+    margin-bottom: 50px;
+}
+
+.team-member img {
+    width: 100%;
+}
+
+.team-section .section-header > p {
+    width: 70%;
+    margin-left: 0;
+}
+
+.team-section .team-member > figcaption {
+    border-left: 8px solid #f3f8ec;
+    margin: 30px 0 0 30px;
+    padding-left: 30px;
+    padding: 10px 0 4px 30px;
+    transition: all .3s ease;
+}
+
+.team-section .team-member:hover > figcaption {
+    border-left: 8px solid #82b60b;
+}
+
+.team-section .team-member > figcaption > h3 {
+    font-size: 26px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #00235a;
+    margin-bottom: 13px;
+
+}
+
+.team-section .team-member > figcaption > p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #82b60b;
+}
+
+.team-members .team-member {
+    margin-bottom: 40px;
+}
+/*** 
+====================================================================
+    End Team Secion CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Partner Secion CSS
+====================================================================
+ ***/
+.partners-section {
+    padding: 142px 0 150px;
+    background: url(../img/bg/04.jpg) no-repeat center center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+.partners-section::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(130, 182, 11, .97);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.partners-section .section-header {
+    margin-bottom: 96px;
+}
+
+.partners-container figure > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.partners-container figure > a::before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    border: 1px solid rgba(255, 255, 255, .175);
+    top: 0;
+    left: 0;
+}
+
+.hover-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.partners-container figure > a:hover {
+    background: #fff;
+}
+
+.partners-container figure > a:hover .hover-img {
+    visibility: visible;
+    opacity: 1;
+}
+
+.partners-container figure > a:hover img:not(.hover-img) {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.footer-space {
+    margin-bottom: 270px;
+}
+/*** 
+====================================================================
+    End Partner Secion CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    End testimony Secion CSS
+====================================================================
+ ***/
+.testimony-section {
+    padding: 145px 0 150px;
+}
+
+.testimony-section .section-header {
+    margin-bottom: 95px;
+}
+
+.review-buttons {
+    background: #f3f8ec;
+}
+
+.review-btn {
+    display: block;
+    position: relative;
+    z-index: 1;
+    background: rgba(130, 182, 11, 1);
+}
+
+.review-btn,
+.review-btn img {
+    transition: all .3s ease;
+}
+
+.review-btn img {
+    opacity: 1;
+    width: 100%;
+}
+
+.review-btn:hover img {
+    opacity: .4
+}
+
+.review-btn.active img {
+    opacity: .1
+}
+
+.review-btn::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: rgba(130, 182, 11, 0.08);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    visibility: visible;
+    opacity: 1;
+    z-index: -1;
+}
+
+.review-btn.active::before {
+    transition: transform .3s ease 0s, visibility .3s ease .2s, opacity .3s ease .2s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+}
+
+.review-buttons figure {
+    position: relative;
+}
+
+.review-buttons figure::before,
+.review-buttons figure::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease 0s;
+}
+
+.review-buttons figure.active-btn::before,
+.review-buttons figure.active-btn::after {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    transition: all .4s ease .2s;
+}
+
+.review-buttons figure.active-btn::before {
+    width: 1px;
+    height: 50%;
+}
+
+.review-buttons figure.active-btn::after {
+    width: 50%;
+    height: 1px;
+}
+
+.review-single {
+    background: #f3f8ec;
+    display: none;
+    padding: 50px 60px;
+}
+
+.review-single.active {
+    display: block;
+}
+
+.review-inner > p {
+    font-size: 23px;
+    line-height: 33px;
+    font-weight: 500;
+    color: #00235a;
+    font-style: italic;
+    margin-top: 34px;
+}
+
+.reviewer {
+    margin-top: 38px;
+}
+
+.reviewer > img {
+    width: 90px;
+}
+
+.reviewed-by {
+    margin-left: 40px;
+}
+
+.reviewed-by > h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #00235a;
+    margin-bottom: 5px;
+}
+
+.reviewed-by > span {
+    font-size: 15px;
+    color: #82b60b;
+}
+/*** 
+====================================================================
+    End testimony Secion CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Contact Page CSS
+====================================================================
+ ***/
+.contact-info {
+    margin-top: 150px;
+}
+
+.contact-inner {
+    background: #f3f8ec;
+    padding: 80px 50px 50px;
+}
+
+.contact-single {
+    padding: 30px;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all .3s ease;
+}
+
+.contact-single > i {
+    font-size: 70px;
+    color: #82b60b;
+}
+
+.contact-single > h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #00235a;
+    margin: 27px 0 16px;
+}
+
+.contact-single > p {
+    font-size: 20px;
+    color: #878c8f;
+}
+
+.contact-single > i,
+.contact-single > h4,
+.contact-single > p {
+    transition: all .3s ease;
+}
+
+.contact-single:hover > i,
+.contact-single:hover > h4,
+.contact-single:hover > p {
+    color: #fff;
+}
+
+.contact-single:hover {
+    background: #82b60b;
+}
+
+.contact-form-area {
+	margin-bottom: 150px;
+}
+
+.contact-form h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    color: #00235a;
+    text-align: center;
+    margin: 140px 0 47px;
+}
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+.contact-form textarea {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+    transition: all .3s ease;
+    margin-top: 5px;
+    box-shadow: inset 0 0 0 1px #e0e1e1;
+}
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]):not([type="file"]):focus,
+.contact-form textarea:focus {
+    box-shadow: inset 0 0 0 1px #82b60b;
+}
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]):not([type="file"])::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+    color: #00235a;
+}
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]):not([type="file"])::-moz-placeholder,
+.contact-form textarea::-moz-placeholder {
+    color: #00235a;
+}
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]):not([type="file"]):-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+    color: #00235a;
+}
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]):not([type="file"])::placeholder,
+.contact-form textarea::placeholder {
+    color: #00235a;
+}
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]):not([type="file"]) {
+    height: 60px;
+}
+
+.contact-form textarea {
+    height: 240px;
+}
+
+.contact-form [type="submit"] {
+    margin-top: 44px;
+}
+
+.contact-map {
+    height: 700px;
+    z-index: 0;
+}
+
+.leaflet-bottom.leaflet-right {
+    display: none;
+}
+
+.contact-page .footer-top {
+    margin-top: 0;
+}
+
+/*** 
+====================================================================
+    End Contact Page CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    Start Error Page CSS
+====================================================================
+ ***/
+.error-content {
+    background: #f3f8ec;
+    padding: 130px 50px 117px;
+    margin: 150px 0 300px;
+}
+
+.error-content span {
+    font-size: 150px;
+    line-height: 150px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    color: #82b60b;
+    background: #fff;
+    text-shadow: 10px 10px 0 rgba(130, 182, 11, 0.1);
+    margin-bottom: 76px;
+    margin-top: 45px;
+}
+
+.error-content .col:nth-child(2) span {
+    background: #82b60b;
+    color: #fff;
+    margin-top: 0;
+    text-shadow: 10px 10px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.error-content .col:nth-child(2) span::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 12px;
+    background: #fff;
+    bottom: -45px;
+    left: 0;
+}
+
+.error-content h3,
+.error-content p {
+    font-weight: 700;
+    color: #00235a;
+}
+
+.error-content h3 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.error-content p {
+    font-size: 18px;
+}
+
+.error-content a {
+    display: inline-block;
+    padding: 20px 40px 17px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #00235a;
+    color: #fff !important;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.error-content a:hover {
+    background: #82b60b;
+}
+
+.error-content a > i {
+    margin-right: 8px;
+    color: #fff;
+    display: inline-block;
+    -webkit-transform: translate(0, 1px);
+    -ms-transform: translate(0, 1px);
+    transform: translate(0, 1px);
+    transition: all .3s ease 0s;
+}
+
+.error-content a:hover > i {
+    -webkit-transform: translate(-5px, 1px);
+    -ms-transform: translate(-5px, 1px);
+    transform: translate(-5px, 1px);
+    transition: all .3s ease .2s;
+}
+/*** 
+====================================================================
+    End Error Page CSS
+====================================================================
+ ***/
+
+
+/*** 
+====================================================================
+    End Footer Secion CSS
+====================================================================
+ ***/
+footer {
+    background: #f3f8ec;
+}
+
+.footer-top {
+    margin-top: 120px;
+    transform: translateY(-50%);
+}
+
+.call-to-action {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 57px 100px 63px;
+    justify-content: space-between;
+    background: url(../img/bg/05.jpg) no-repeat center center / cover;
+}
+
+.call-to-action::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 35, 90, .96);
+    box-shadow: inset 0 -6px 0 #82b60b;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.call-to-action h2 {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #fff;
+    width: 50%;
+}
+
+.call-to-action .theme-btn {
+    color: #ffffff;
+}
+
+.call-to-action .theme-btn:hover {
+    background: #fff;
+    color: #00235a;
+}
+
+.call-to-action .theme-btn:hover > i {
+    color: #00235a;
+}
+
+.footer-middle {
+    padding: 125px 0;
+}
+
+.footer-top + .footer-middle {
+    padding: 5px 0 75px;
+}
+
+.footer-gallery {
+    margin: 0 -5px;
+}
+
+.footer-gallery figure {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+}
+
+.footer-gallery figure > a {
+    display: block;
+    position: relative;
+    background: #82b60b;
+}
+
+.footer-gallery figure > a::before,
+.footer-gallery figure > a::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease 0s;
+}
+
+.footer-gallery figure > a:hover::before,
+.footer-gallery figure > a:hover::after {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    transition: all .4s ease .1s;
+}
+
+.footer-gallery figure > a:hover::before {
+    width: 1px;
+    height: 50%;
+}
+
+.footer-gallery figure > a:hover::after {
+    width: 50%;
+    height: 1px;
+}
+
+.footer-gallery figure > a > img {
+    transition: all .3s ease;
+    width: 100%;
+}
+
+.footer-gallery figure > a:hover > img {
+    opacity: .1;
+}
+
+.footer-col {
+    margin-bottom: 50px;
+}
+
+.footer-col > h2 {
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #00235a;
+    margin-bottom: 35px;
+}
+
+.footer-contact p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.footer-contact p + p {
+    margin-top: 7px;
+}
+
+.footer-contact p > i {
+    font-size: 20px;
+    line-height: 30px;
+    color: #82b60b;
+}
+
+.footer-contact p > span {
+    font-size: 15px;
+    line-height: 30px;
+    color: #222;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-social {
+    margin-top: 25px;
+}
+
+.footer-social > a {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 100%;
+    box-shadow: inset 0 0 0 1px #c4c4c4;
+}
+
+.footer-social > a + a {
+    margin-left: 10px;
+}
+
+.footer-social > a:hover {
+    box-shadow: inset 0 0 0 25px #82b60b;
+}
+
+.footer-social > a > i {
+    font-size: 15px;
+    line-height: 45px;
+    color: #222;
+    transition: all .3s ease;
+}
+
+.footer-social > a:hover > i {
+    color: #fff;
+}
+
+.footer-col ul li {
+    position: relative;
+    color: #222;
+    padding-left: 32px;
+    transition: all .3s ease;
+}
+
+.footer-col ul li:hover {
+    color: #82b60b
+}
+
+.footer-col ul li + li {
+    margin-top: 12px;
+}
+
+.footer-col ul li::before {
+    position: absolute;
+    content: "\ea7c";
+    font-family: "IcoFont";
+    color: currentColor;
+    transition: all .3s ease;
+    top: 0;
+    left: 0;
+}
+
+.footer-col ul li > a {
+    display: inline-block;
+    font-size: 15px;
+    color: #222;
+    position: relative;
+}
+
+.footer-col ul li > a:hover {
+    color: #82b60b
+}
+
+.footer-col ul li > a::before {
+    position: absolute;
+    content: '';
+    width: calc(100% - 3px);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background: currentColor;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition: transform .5s cubic-bezier(0.100, 0.600, 0.350, 1.000) 0s, background .3s;
+}
+
+.footer-col ul li > a:hover::before {
+    transform: scale(1, 1);
+    transform-origin: left;
+    transition: transform .5s cubic-bezier(0.100, 0.600, 0.350, 1.000) .1s, background .3s;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    background: #82b60b;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-bottom p > span {
+    font-weight: 700;
+}
+/*** 
+====================================================================
+    End Footer Secion CSS
+====================================================================
+ ***/
+
+ /*** 
+====================================================================
+    Start Phone Secion CSS
+====================================================================
+ ***/
+.phone{
+    display: flex;
+    padding-top: 1vh;
+}
+.left{
+    cursor: pointer     ;
+    display: flex;
+    position: fixed;
+    top: 85%;
+    padding: 1% 3% 1% 3%;
+    z-index: 2;
+    font-size: 25px;
+    
+}
+.left a{
+    color: white;
+}
+.fab{
+    color: green;
+}
+.right{
+    margin-left: 83%;
+}
+/*** 
+====================================================================
+    End Phone Secion CSS
+====================================================================
+ ***/
+/*** 
+====================================================================
+    Start Logo Secion CSS
+====================================================================
+ ***/
+    .logo img{
+        height: 75px;
+    width: auto;
+    }
+ /*** 
+====================================================================
+    End Logo Secion CSS
+====================================================================
+ ***/

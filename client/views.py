@@ -4,9 +4,9 @@ from django.core.mail import send_mail
 # Create your views here.
 
 def index(request):
-    return render(request,'client/index.html')
+    return render(request,'index.html')
 def about(request):
-    return render(request,'client/about.html')
+    return render(request,'about.html')
 def teacher(request):
     if request.method=="POST":
         name=request.POST['name']
@@ -27,9 +27,9 @@ def teacher(request):
         teacher=Teacher(name=name,contact=contact,email=email,city=city,gender=gender,aadhar=aadhar,subject=subject,address=address,img=img,)
         teacher.save()
         print("User Created")
-        return render(request,'client/submit.html',{"message":"Your Response has been recorded \n We will contact you soon!!!"})
+        return render(request,'submit.html',{"message":"Your Response has been recorded \n We will contact you soon!!!"})
     else:
-        return render(request,'client/teacher.html')
+        return render(request,'teacher.html')
 def student(request):
     li=[1,2,3,4,5,6,7,8,9,10,11,12]
     if request.method=="POST":
@@ -53,9 +53,9 @@ def student(request):
         student=Student(name=name,contact=contact,email=email,city=city,board=board,stander=stander,gender=gender,address=address,subject=subject,pref=pref)
         student.save()
         print("User Created")
-        return render(request,'client/submit.html',{"message":"Your Response has been recorded we will look best tutor for you."})
+        return render(request,'submit.html',{"message":"Your Response has been recorded we will look best tutor for you."})
     else:
-        return render(request,'client/student.html',{"li":li})
+        return render(request,'student.html',{"li":li})
 
 def contact(request):
     if request.method=="POST":
@@ -69,9 +69,9 @@ def contact(request):
         print("Message Successfully Send")
         return redirect('/')
     else:    
-        return render(request,'client/contact.html')
+        return render(request,'contact.html')
     pass
 
 def submit(request):
-    return render(request,'client/submit.html')
+    return render(request,'submit.html')
 
