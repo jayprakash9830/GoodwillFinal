@@ -1,0 +1,313 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="GoodWillHomeTution - Home Tution For Best Future of your children" />
+    <meta name="author" content="Design Tone" />
+    <title>Register As Teacher || (Best For Your Children)</title>
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png'%}" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- css assets -->
+    <link href="{% static 'assets/css/bootstrap.min.css'%}" rel="stylesheet" />
+    <link href="{% static 'assets/css/icofont.min.css'%}" rel="stylesheet" />
+    <link href="{% static 'assets/css/animate.css'%}" rel="stylesheet" />
+    <link href="{% static 'assets/css/mainmenu.css'%}" rel="stylesheet" />
+    <link href="{% static 'assets/css/leaflet.css'%}" rel="stylesheet" />
+    <link href="{% static 'assets/css/magnific-popup.css'%}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.carousel.css'%}" rel="stylesheet" />
+    <link href="{% static 'assets/css/style.css'%}" rel="stylesheet" />
+    <link href="{% static 'assets/css/responsive.css'%}" rel="stylesheet" />
+    <link href="{% static 'assets/css/register.css'%}" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ================== -->
+    <!-- page-wrapper start -->
+    <div class="page-wrapper contact-page">
+
+        <!-- ============ -->
+        <!-- header start -->
+        <header class="main-header">
+            <!--Header-Upper-->
+            <div class="header-upper">
+                <div class="container clearfix">
+
+                    <div class="header-inner clearfix">
+                        <div class="logo-outer">
+                            <div class="logo"><a href="."><img src="{% static 'assets/img/logo.png'%}" alt=""
+                                        title=""></a></div>
+                        </div>
+
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-lg ml-lg-auto mr-xl-auto">
+                            <div class="navbar-header clearfix">
+                                <div class="logo"><a href="."><img src="{% static 'assets/img/logo.png'%}" alt=""
+                                            title=""></a></div>
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-collapse-one">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse navbar-collapse-one collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li><a href=".">Home</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li class="current-menu-item"><a href="teacher">Join As Tutor</a></li>
+                                    <li><a href="student">Need Tutor</a></li>
+                                    <li><a href="contact">contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+
+                        <!-- Menu buttons-->
+                        <div class="menu-button ml-55">
+                            <a href="tel:+918709286499" class="theme-btn"><i class="icofont-ui-call"></i>
+                                <span>8709286499</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--End Header Upper-->
+        </header>
+        <!-- header end -->
+        <!-- ========== -->
+
+
+        <!-- ======================= -->
+        <!-- contact-form-area start -->
+        <div class="contact-form-area " id="contact-form">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <form class="contact-form" action="teacher" method="POST">
+                            {%csrf_token%}
+                            <h2>Here!! You can utilise Your Knowledge. <br> <span style="color:#91BF29"> Register
+                                    Yourself!</span></h2>
+                            <div class="wrapper">
+                                <div class="row">
+                                    <h1 class="heading">Teacher Registration</h1>
+                                </div>
+                                <div class="row">
+                                    <div class="form-grp">
+                                        <label for="fullname">Full Name <span class="marked">*</span></label>
+                                        <input type="text" name="name" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter Name" required>
+                                        <small id="emailHelp" class="form-text text-muted">Enter your Full Name </small>
+                                    </div>
+                                    <div class="form-grp">
+                                        <label for="exampleInputEmail1">Email address <span
+                                                class="marked">*</span></label>
+                                        <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter email" required>
+                                        <small id="emailHelp" class="form-text text-muted">Enter your email-Id</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-grp">
+                                        <label for="fullname">Contact Number <span class="marked">*</span></label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" name="contact" placeholder="Contact Number"
+                                            required>
+                                        <small id="emailHelp" class="form-text text-muted">Enter Your 10 digit number
+                                            We'll never share </small>
+                                    </div>
+                                    <div class="form-grp">
+                                        <label for="select-option">City <span class="marked">*</span></label> <br>
+                                        <select class="city" name="teachercity" aria-label="Default select example"
+                                            required>
+                                            <option selected disabled>Choose Your City</option>
+                                            <option value="patna">Patna</option>
+                                            <option value="varanasi">Varanasi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-grp">
+                                        <label for="">Gender <span class="marked">*</span></label> <br>
+                                        <div class="gender-candidate">
+                                            <label for="male">Male</label>
+                                            <input type="radio" name="gender" id="male" value="Male" required>
+                                            <label for="female">Female</label>
+                                            <input type="radio" name="gender" id="female" value="Female" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-grp">
+                                        <label for="">Subject <span class="marked">*</span></label>
+                                        <input type="text" name="subject" id="" class="form-control"
+                                            placeholder="Which Subject you can guide" required>
+                                        <small class="form-text text-muted">Ex. Math English Python...</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-grp address">
+                                        <label for="address">Address <span class="marked">*</span></label>
+                                        <textarea name="address" id="" cols="30" rows="10"
+                                            placeholder="Your Complete Address.." required></textarea>
+                                        <small class="form-text text-muted">Your address must contains area
+                                            code.</small>
+                                    </div>
+                                    <div class="form-grp">
+                                        <div class="aadhar">
+                                            <label for="aadhar">Aadhar Number</label>
+                                            <input type="text" name="aadhar" id="" placeholder="Aadhar Number"
+                                                form-control>
+                                            <small class="form-text text-muted">We will never share your aadhar number
+                                                with anyone else</small>
+                                        </div>
+                                        <div class="image">
+                                            <img id="blah" alt="your image" width="100" height="100"
+                                                style="margin-top: 20px; margin-left:45px" />
+                                            <input type="file" style="margin-top: 20px;" name="image"
+                                                onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+                                            <small class="form-text text-muted">Choose Your Image</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <button type="submit" class="theme-btn">Register</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact-form-area end -->
+
+
+        <!-- ======================= -->
+
+    </div>
+    <!-- /.page-content -->
+    </main>
+    <!-- site-content end -->
+    <!-- ================ -->
+
+    <!-- ============ -->
+    <!-- footer start -->
+    <footer>
+        <div class="footer-top">
+            <div class="container overflow-hidden">
+                <div class="call-to-action wow animate__animated animate__slow animate__slideInUp">
+                    <h2>Let's Secure Your Child Future Togather.</h2>
+                    <a href="contact" class="theme-btn">Contact Now <i class="icofont-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- /.footer-top -->
+        <div class="footer-middle">
+            <div class="container">
+                <div class="phone">
+                    <div class="left theme-btn">
+                        <i class="fab wcolor fa-whatsapp con" style="margin-right:10px; padding:2px"></i>
+
+                        <a href="https://wa.me/+918709286499" target="_blanck">8709286499</a>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+
+                    <div class="col-xl-2 col-lg-3 col-md-6 pr-xl-0">
+                        <div class="footer-col">
+                            <h2>Get In Touch</h2>
+                            <div class="footer-contact">
+                                <p>
+                                    <i class="icofont-location-pin"></i>
+                                    <span>263, near Forest Department, Nehru Nagar, Patliputra Colony, Patna, Bihar
+                                        800013, India</span>
+                                </p>
+                                <p>
+                                    <i class="icofont-ui-call"></i>
+                                    <span>8709286499</span>
+                                </p>
+                                <p>
+                                    <i class="icofont-email"></i>
+                                    <span>uttam.tiwary77@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="footer-social">
+                                <a href="https://www.instagram.com/_ncert_exam_/?utm_medium=copy_link" target="_blank">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://twitter.com/home" target="_blank">
+                                    <i class="icofont-twitter"></i>
+                                </a>
+                                <a href="skype:robert-biswas?chat">
+                                    <i class="icofont-skype"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 pr-xl-0">
+                        <div class="footer-col">
+                            <h2>Teacher's For</h2>
+                            <ul>
+                                <li>State Board</li>
+                                <li>ICSE</li>
+                                <li>CBSE</li>
+                                <li>Computer Science</li>
+                                <li>Management&nbspDegree</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 pr-xl-0">
+                        <div class="footer-col">
+                            <h2>Quick Link</h2>
+                            <ul>
+                                <li><a href=".">Home</a></li>
+                                <li><a href="about">About</a></li>
+                                <li><a href="teacher">Join As Tutor</a></li>
+                                <li><a href="student">Need Tutor</a></li>
+                                <li><a href="contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.footer-middle -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright © <span>2021</span> | All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- /.footer-bottom -->
+    </footer>
+    <!-- footer end -->
+    <!-- ========== -->
+    </div>
+    <!-- page-wrapper end -->
+    <!-- ================ -->
+
+
+    <div class="scroll-to-top" data-target="html">
+        <i class="icofont-arrow-up"></i>
+    </div>
+    <!-- /.back2Top button -->
+
+    <!-- js assets -->
+    <script src="{% static 'assets/js/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.parallax-scroll.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.js' %}"></script>
+    <script src="{% static 'assets/js/leaflet.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="https://kit.fontawesome.com/0ed7c36b79.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
